@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_ninja_ui/constants.dart';
+import 'package:food_ninja_ui/screens/register%20screen/register.dart';
 import 'package:food_ninja_ui/size_config.dart';
 import 'package:food_ninja_ui/widgets/default_button.dart';
 
@@ -200,12 +201,16 @@ class LoginScreen extends StatelessWidget {
                 SizedBox(
                   height: getProportionateScreenHeight(20),
                 ),
-                Text(
-                  "Don't Have An Account? Register",
-                  style: TextStyle(
-                    color: kSecondaryGreen,
-                    fontSize: getProportionateScreenWidth(12),
-                    fontWeight: FontWeight.w500,
+                InkWell(
+                  onTap: () =>
+                      Navigator.pushNamed(context, RegisterScreen.routeName),
+                  child: Text(
+                    "Don't Have An Account? Register",
+                    style: TextStyle(
+                      color: kSecondaryGreen,
+                      fontSize: getProportionateScreenWidth(12),
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                 ),
                 SizedBox(
