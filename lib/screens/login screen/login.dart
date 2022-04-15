@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_ninja_ui/constants.dart';
+import 'package:food_ninja_ui/screens/forgot%20password/forgotpassword.dart';
 import 'package:food_ninja_ui/screens/register%20screen/register.dart';
 import 'package:food_ninja_ui/size_config.dart';
 import 'package:food_ninja_ui/widgets/default_button.dart';
@@ -180,12 +181,16 @@ class LoginScreen extends StatelessWidget {
                 SizedBox(
                   height: getProportionateScreenHeight(20),
                 ),
-                Text(
-                  'Forgot Password',
-                  style: TextStyle(
-                    color: kSecondaryGreen,
-                    fontSize: getProportionateScreenWidth(12),
-                    fontWeight: FontWeight.w500,
+                InkWell(
+                  onTap: () => Navigator.pushNamed(
+                      context, ForgotPasswordScreen.routeName),
+                  child: Text(
+                    'Forgot Password',
+                    style: TextStyle(
+                      color: kSecondaryGreen,
+                      fontSize: getProportionateScreenWidth(12),
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                 ),
                 SizedBox(

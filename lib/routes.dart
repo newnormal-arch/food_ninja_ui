@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_ninja_ui/screens/forgot%20password/forgotpassword.dart';
 import 'screens/login screen/login.dart';
 import 'screens/onboarding screen/onboarding.dart';
 import 'screens/register screen/register.dart';
@@ -11,4 +12,5 @@ final Map<String, WidgetBuilder> routes = {
   OnboardingScreen.routeName: (context) => const OnboardingScreen(),
   LoginScreen.routeName: (context) => const LoginScreen(),
   RegisterScreen.routeName: (context) => const RegisterScreen(),
+  ForgotPasswordScreen.routeName: (context) => const ForgotPasswordScreen(),
 };
